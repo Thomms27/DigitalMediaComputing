@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www,w3,org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg">
+	<head>
+		<style>
+			body {
+				background: white;
+				color: #000000;
+			}
+			
+			#hiddencanvas {
+				display: none;
+			}
+			
+			#c1	{
+				background-image: url("Sanic.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			
+			canvas {
+				display: inline;
+			}
+			
+		</style>
+		
+		<script type="text/javascript" src="main.js">
+		</script>
+	</head>
+		<p>DMC ASSIGNMENT 2 - S3381229</p>
+		<br />
+		<p>Video Name: <input type="text" id="videoName"></p>
+		<p>Video Width: <input type="text" id="videoWidth"></p>
+		<p>Video Height: <input type="text" id="videoHeight"></p>
+		<br />
+		
+		<p>Cartoon Values:</p>
+		<p>Brightness: <input type="text" id="inputCartoonBrightness">
+		   Threshold: <input type="text" id="inputCartoonThreshold"></p>
+		<p>Pixelate Values: </p>
+		<p>Pixel Size: <input type="text" id="inputPixelSize"></p>
+		<input type="button" value="Submit" onclick="validateForm()">
+	
+	<body onload="processor.doLoad()" style="background-color: rgb(0,0,128); color: rgb(255,255,255);">
+		<div>
+			<input type="button" value="Cartoon" onclick="toggleCartoon()">
+			<input type="button" value="Pixelate" onclick="togglePixelate()">
+			<input type="button" value="Mask" onclick="toggleMask()">
+			<input type="button" value="Default" onclick="toggleDefault()">
+			<br />
+			<video id="videotag" controls="true">
+				<source src="lol.mp4"></source>
+			</video>
+		</div>
+		<div class="result">
+			<canvas id="c1" width="480" height="320"></canvas>
+			<canvas id="c2" width="480" height="384"></canvas>
+		</div>
+	</body>
+</html>
