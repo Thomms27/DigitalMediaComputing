@@ -3,6 +3,13 @@ This was an assignment during university which involved manipulation of image da
 
 HTML and Javascript are used for this project
 
+Input values and what they do:
+
+  *Video Width and Height will change the canvas size of the FINAL image
+  
+  *Cartoon Values has two properties - Brightness (Lower the value, thicker the lines), Threshold (Lower the value, higher range of color used)
+  
+  *Pixelate Values has one property: Pixel Size (Higher the value, Larger the pixelation, note: try keep value 2 to the power of x for best results)
 
 Files not included are:
   -Videos and images used
